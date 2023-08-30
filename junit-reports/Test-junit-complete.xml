@@ -52,11 +52,11 @@ timestamp   Date and time of when the test run was executed (in ISO 8601 format)
 
         <!-- <system-out> Optionally data written to standard out for the suite. 
         Also supported on a test case level, see below. -->
-        <system-out>Data written to standard out.</system-out>
+        <system-out>Data written to standard out for suite.</system-out>
 
         <!-- <system-err> Optionally data written to standard error for the suite. 
         Also supported on a test case level, see below. -->
-        <system-err>Data written to standard error.</system-err>
+        <system-err>Data written to standard error for suite.</system-err>
 
         <!-- <testcase> There are one or more test cases in a test suite. A test passed
         if there isn't an additional result element (skipped, failure, error).

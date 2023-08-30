@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="com.cloudbees.TestSuite1" tests="3" failures="1" errors="0" skipped="0" time="0.012">
+    <testcase name="testCase1" classname="com.cloudbees.TestClass1" time="0.004"/>
+    <testcase name="testCase2" classname="com.cloudbees.TestClass2" time="0.003">
+      <failure message="expected &lt;true&gt; but was &lt;false&gt;" type="java.lang.AssertionError">
+        org.junit.ComparisonFailure: expected &lt;true&gt; but was &lt;false
+      </failure>
+	  <system-out>Data written to standard out for Test Case.</system-out>
+	  <system-err>Data written to standard out for Test Case.</system-err>
+    </testcase>
+    <testcase name="testCase3" classname="com.cloudbees.TestClass2" time="0.005"/>
+  </testsuite>
+  <testsuite name="com.cloudbees.TestSuite2" tests="2" failures="0" errors="1" skipped="1" time="0.008">
+    <testcase name="tesCase4" classname="com.cloudbees.TestClass3" time="0.003">
+      <error message="failed to create object" type="java.lang.Exception">
+        com.example.TestClass3.testMethod4(TestClass3.java:10)
+      </error>
+    </testcase>
+    <testcase name="testCase5" classname="com.cloudbees.TestClass3" time="0.005">
+      <skipped message="skipped for some reason">com.example.TestClass3.testMethod5(TestClass3.java:14)</skipped>
+    </testcase>
+  </testsuite>
+</testsuites>
